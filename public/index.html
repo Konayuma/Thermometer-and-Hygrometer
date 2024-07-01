@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arduino Data</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Temperature and Humidity Sensor</h1>
+    </header>
+    <main>
+      <div id="data">
+        <h2>Current Conditions</h2>
+        <div class="temperature">
+          <p>Temperature: <span id="temperature">--</span> °C</p>
+        </div>
+        <div class="humidity">
+          <p>Humidity: <span id="humidity">--</span> %</p>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
